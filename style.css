@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainCont {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(171,169,190);
+    background: linear-gradient(90deg, rgba(171,169,190,1) 0%, rgba(152,204,197,1) 50%, rgba(219,190,196,1) 100%);
+    padding: 50px 25px;
+}
+
+header {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.topBar{
+    width: 60%;
+    height: 50px;
+    background-color: white;
+    padding: 10px;
+}
+
+.topBar input {
+    width: 95%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 6px;
+}
+
+ 
+
+.add{
+    width: 4%;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.add i {
+    font-size: 25px;
+    color: teal;
+    margin-top: 12px;
+}
+
+
+
+
+.containerImportant {
+    list-style: none;
+    padding: 20px 35px;
+    background-color: rgb(233, 107, 107);
+}
+
+.containerImportant input {
+    margin-right: 10px;
+}
+
+.containerImportant label {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(41, 26, 30);
+}
+
+
+
+.container {
+    width: 64%;
+    background-color: white;
+    margin: 10px auto;
+}
+
+.containerUl {
+    list-style: none;
+    padding: 20px 35px;
+}
+
+.container ul li {
+    height: 40px;
+    border-bottom: 1px solid rgb(177, 169, 169);
+    padding-left: 15px;
+    margin-top: 10px;
+    padding-top: 5px;
+    color: rgb(95, 89, 89);
+    font-size: 16px;
+}
+
+.container ul li input {
+    margin-right: 10px;
+}
+
+.container ul li:last-child {
+    border-bottom: none;
+}
+
+.container ul li div {
+    float: right;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.container .delete {
+    font-size: 20px;
+    font-weight: 600;
+    color: red;
+}
+
+.container .edit {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(23, 148, 33);
+}
+
+.container .update {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(21, 144, 148);
+}
+
+.checked {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.last {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+
+.makeImportant {
+    width: 30%;
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+
+
+.hide {
+    display: none;
+    width: 20%;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(12, 75, 31, 0.801);
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(102, 100, 100);
+}
+
+.makeImportant:hover + .hide {
+    display: block;
+    position: relative;
+    right: 45%;
+    top: 75%;
+}
+
+
+.clear {
+    width: 20%;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: gray;
+}
+
+.clear span {
+    cursor: pointer;
+}
+
+.clear span:hover{
+    color: black;
+}
+
+.modify {
+    border: none;
+    outline: none;
+    margin-left: 15px;
+    color: rgb(29, 28, 28);
+}
+
+
+
+
+
+@media(max-width: 768px){
+
+    .mainCont{
+        padding: 40px 15px;
+    }
+
+    .topBar {
+        width: 85%;
+    }
+
+    .add {
+        width: 15%;
+    }
+
+    .add i {
+        font-size: 15px;
+        margin-top: 17px;
+    }
+
+    .topBar i {
+        font-size: 15px;
+        margin-top: 8px;
+    }
+
+    .topBar input {
+        width: 90%;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .containerUl {
+        padding: 15px 20px;
+    }
+
+    .container ul li {
+        padding-left: 12px;
+    }
+
+    .container .delete {
+        font-size: 15px;
+    }
+    
+    .container .edit {
+        font-size: 15px;
+    }
+
+}
