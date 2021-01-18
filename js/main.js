@@ -154,6 +154,9 @@ function deleteTask(pEvent) {
     })
 
     listaTarea.splice(position, 1);
+
+
+
 }
 
 
@@ -241,6 +244,31 @@ function updateTask(pEvent) {
     }
 
 }
+
+
+
+const mainSection = document.querySelector('.container1');
+const important = document.querySelector('.makeImportant span');
+important.addEventListener('click', selectImportant);
+
+
+function selectImportant(pEvent) {
+
+    let checkB = document.querySelectorAll('.chekito');
+
+    for (i = 0; i < listaTarea.length; i++) {
+        if (checkB[i].checked) {
+            const fullNode = checkB[i].parentNode;
+
+            mainSection.appendChild(fullNode);
+
+
+        }
+    }
+
+
+}
+
 
 
 

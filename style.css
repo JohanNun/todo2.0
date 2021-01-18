@@ -52,20 +52,33 @@ header {
 
 
 
-.containerImportant {
-    list-style: none;
-    padding: 20px 35px;
+.container1 {
+    margin-top: 5px;
     background-color: rgb(233, 107, 107);
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
 }
 
-.containerImportant input {
+.container1 input {
     margin-right: 10px;
 }
 
-.containerImportant label {
+.container1 label {
     font-size: 22px;
     font-weight: 600;
     color: rgb(41, 26, 30);
+}
+
+.container1 li {
+    width: 100%;
+    border-bottom: 1px solid rgb(177, 169, 169);
+    padding-left: 25px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    color: rgb(95, 89, 89);
+    font-size: 16px;
 }
 
 
@@ -91,33 +104,33 @@ header {
     font-size: 16px;
 }
 
-.container ul li input {
+.container ul li input, .container1 li input {
     margin-right: 10px;
 }
 
-.container ul li:last-child {
+.container ul li:last-child, .container1 li:last-child {
     border-bottom: none;
 }
 
-.container ul li div {
+.container ul li div, .container1 li div {
     float: right;
     padding-right: 15px;
     cursor: pointer;
 }
 
-.container .delete {
+.container .delete, .container1 .delete {
     font-size: 20px;
     font-weight: 600;
     color: red;
 }
 
-.container .edit {
+.container .edit, .container1 .edit  {
     font-size: 20px;
     font-weight: 600;
     color: rgb(23, 148, 33);
 }
 
-.container .update {
+.container .update, .container1 .update {
     font-size: 20px;
     font-weight: 600;
     color: rgb(21, 144, 148);
@@ -184,12 +197,12 @@ header {
     color: black;
 }
 
-.modify {
+/* .modify {
     border: none;
     outline: none;
     margin-left: 15px;
     color: rgb(29, 28, 28);
-}
+} */
 
 
 
@@ -227,24 +240,38 @@ header {
         padding: 5px;
     }
 
-    .container {
+    .container, .container1 {
         width: 100%;
     }
 
-    .containerUl {
+    .containerUl, .containerImportant {
         padding: 15px 20px;
     }
 
-    .container ul li {
+    .container ul li, .container1 ul li {
         padding-left: 12px;
     }
 
-    .container .delete {
+    .container .delete, .container1 .delete  {
         font-size: 15px;
     }
     
-    .container .edit {
+    .container .edit, .container1 .edit {
         font-size: 15px;
+    }
+
+    .makeImportant {
+        width: 45%;
+        padding-bottom: 10px;
+    }
+
+    .hide {
+        width: 40%;
+    }
+
+    .clear {
+        width: 30%;
+        padding-bottom: 10px;
     }
 
 }
